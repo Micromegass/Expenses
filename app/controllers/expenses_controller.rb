@@ -9,7 +9,7 @@ def index
   end 
 
   if params[:category_id].present?
-  @expenses = @expenses.where('category_id = ?', params[:category_id])
+  @expenses = @expenses.where("category_id = ?", params[:category_id])
   end 
 
 end 
